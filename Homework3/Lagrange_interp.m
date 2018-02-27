@@ -1,0 +1,1 @@
+function y = Lagrange_interp(xi,yi,x)n = length(xi);m = length(x);P = ones(n,m); for i = 1:n    for j = 1:n        if i ~= j            P(i,:) = P(i,:).*(x-xi(j))/(xi(i)-xi(j));        end    endend y = P'*yi';

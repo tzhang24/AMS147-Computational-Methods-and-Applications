@@ -1,0 +1,1 @@
+function [lambda,L]=compute_Lebesgue_function(xi)x = linspace(min(xi),max(xi),1000); n = length(xi); P = ones(n,length(x));le = 0;maxi = 0;for k=1:n  for j=1:n             if j~=k                 P(k,:)=P(k,:).*(x-xi(j))/(xi(k)-xi(j));             end       end  le = le + abs(P(k,:));  max_le = max(le);end%lambda showed in graphplot(x,le)%LL = max_leend

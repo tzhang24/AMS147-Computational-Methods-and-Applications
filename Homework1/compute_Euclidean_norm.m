@@ -1,0 +1,1 @@
+function [z] = compute_Euclidean_norm(X)n = length(X);s = 0;for i = 1:n  s = X(i)^2+s;endans = sqrt(s)end

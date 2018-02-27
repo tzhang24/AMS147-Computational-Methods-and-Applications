@@ -1,0 +1,1 @@
+function [P,E,n1,n2]=pi_series()p = 1/16;P = 0;sum2 = 0;for j = 0:10  a = 4/(8*j+1);  b = 2/(8*j+4);  c = 1/(8*j+5);  d = 1/(8*j+6);  sum1 = (p^j)*(a-b-c-d);  P = sum1 + Pend;for k = 1:10  sum2 = sum2 + (1/k)^2;  E = sqrt(sum2*6)end;n1 = 0n2 = 0end;

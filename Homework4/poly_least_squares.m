@@ -1,0 +1,1 @@
+function [a,err] = poly_least_squares(x,y,M)n = length(x);B = ones(n,M+1);%create Vandermonde matrixfor i=2:M+1  B(:,i)=x.^(i-1);end[Q, R] = qr(B, 0);a = transpose(R\(transpose(Q)*y(:)));p= 0;err = 0;for i = 1:n  for j = 1:M+1    p = p + (a(j) * x(i)^(j-1));  enderr = err + (y(i)-p)^2;enderrend

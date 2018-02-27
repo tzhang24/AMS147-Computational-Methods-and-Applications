@@ -1,0 +1,1 @@
+function y = matrix_times_vector(A,x);m=size(A,1);			% rows of An=size(A,2);			% columns of Ac=linspace(0,0,m)';		% column vector for i=1:m				for j=1:n					c(i)=c(i)+A(i,j)*x(j);		end;				end;					fprintf('%i\n', c)
